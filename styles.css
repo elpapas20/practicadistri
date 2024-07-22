@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c003e; /* Fondo morado oscuro */
+    color: #e0d700; /* Texto amarillo semioscuro */
+}
+
+header {
+    background-color: #1f0030; /* Encabezado ligeramente más oscuro */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+.user-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 60px; /* Aumentar el tamaño de la foto */
+    height: 60px; /* Aumentar el tamaño de la foto */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logout-link {
+    color: white;
+    text-decoration: underline;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.logout-link:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1f0030;
+}
+
+.nav-link {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.auth-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.auth-links .nav-link {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.game-card {
+    background-color: #4a007e; /* Cuadro morado más claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    max-width: 800px; /* Ajustar el ancho del contenedor */
+    display: flex;
+    align-items: flex-start; /* Alinear los elementos al inicio vertical */
+    color: #e0d700; /* Texto amarillo semioscuro */
+}
+
+.image-container {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.game-image {
+    width: 250px; /* Hacer la imagen más grande */
+}
+
+.game-details {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.rating p {
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; /* Añadir margen superior para separar los botones del texto */
+}
+
+.btn {
+    display: block;
+    background-color: #3b0065;
+    color: white;
+    padding: 5px 10px; /* Hacer los botones más pequeños y angostos */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em; /* Ajustar el tamaño del texto del botón */
+}
+
+.btn:hover {
+    background-color: #5e0092;
+}
+
+.bookshelf-section {
+    margin-top: 40px;
+    color: #e0d700; /* Texto amarillo semioscuro */
+}
+
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reducir el espacio entre las imágenes */
+}
+
+.book {
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.book img {
+    width: 150px; /* Hacer las imágenes un poco más grandes */
+    height: 250px; /* Hacer las imágenes un poco más grandes */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book p {
+    margin-top: 1px; /* Reducir el espacio entre la imagen y el texto */
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f0030;
+    color: white;
+}
+.comment-section {
+    margin-top: 40px;
+    color: #e0d700; /* Texto amarillo semioscuro */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Ajustar el ancho máximo del formulario */
+    background-color: #1f0030; /* Fondo del formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Ajustar el ancho del textarea */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    background-color: #4a007e; /* Fondo morado más claro */
+    color: white; /* Texto blanco */
+}
+
+.comment-section input[type="file"] {
+    margin-bottom: 10px;
+    color: white; /* Texto blanco */
+}
+
+.comment-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b0065;
+    color: white;
+    cursor: pointer;
+}
+
+.comment-section button:hover {
+    background-color: #5e0092;
+}
+
+.comments {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment {
+    background-color: #3b0065;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white; /* Texto blanco */
+    width: 100%;
+    max-width: 600px; /* Ajustar el ancho máximo del comentario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment img.comment-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.comment small {
+    display: block;
+    margin-top: 10px;
+    color: #ccc; /* Texto gris claro */
+    font-size: 0.8em; /* Tamaño de fuente más pequeño */
+    text-align: right; /* Alinear el texto a la derecha */
+}
