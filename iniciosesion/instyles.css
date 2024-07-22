@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c003e; /* Fondo morado oscuro */
+    color: #e0d700; /* Texto amarillo semioscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-page {
+    display: flex;
+    background-color: #1f0030; /* Fondo del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.login-container {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.login-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Asegurar que los campos de entrada ocupen el 100% del ancho */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.login-container .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b0065;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #5e0092;
+}
+
+.register-link {
+    color: #e0d700;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%; /* Asegurar que el campo de entrada de la contraseña ocupe el 100% del ancho */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    padding-right: 40px; /* Añadir espacio para el ícono de mostrar/ocultar contraseña */
+}
+
+.password-container img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-60%);
+    cursor: pointer;
+    width: 35px; /* Hacer el icono más pequeño */
+    height: 30px; /* Hacer el icono más pequeño */
+}
+
+.carousel-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a005e;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 5px;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
